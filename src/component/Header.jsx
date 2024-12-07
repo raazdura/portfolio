@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import Skills from "./Skills";
+import SocialIconLinks from "./socialIconLinks";
+import Zoro from "./images/Zoro.jpg";
 
 const Header = () => {
   const [isMounted, setIsMounted] = useState(false);
@@ -43,12 +45,28 @@ const Header = () => {
       high-performing websites.
     </h5>
   );
+  const five = () => (
+    <div
+      style={{ transitionDelay: "500ms" }}
+      className="md:hidden text-lg my-4 text-black dark:text-white max-w-[480px] mb-2 opacity-0 transform translate-y-5 transition-all duration-500 ease-in-out"
+    >
+      <SocialIconLinks flex-direction="flex-row" />
+    </div>
+  );
+  const six = () => (
+    <div
+      style={{ transitionDelay: "600ms" }}
+      className="text-lg mt-6 text-black dark:text-white max-w-[480px] mb-2 opacity-0 transform translate-y-5 transition-all duration-500 ease-in-out"
+    >
+      <Skills />
+    </div>
+  );
 
-  const items = [one, two, three, four];
+  const items = [one, two, three, four, five, six];
 
   return (
     <header className="h-screen flex justify-start items-center px-4 lg:px-[100px]">
-      <div className="container mx-auto">
+      <div className="container flex justify-between items-center mx-auto">
         <TransitionGroup>
           {isMounted &&
             items.map((item, i) => (
@@ -65,8 +83,8 @@ const Header = () => {
               </CSSTransition>
             ))}
         </TransitionGroup>
+        <img src={Zoro} alt="" className="h-[500px] hidden md:flex" />
       </div>
-      {/* <Skills /> */}
     </header>
   );
 };

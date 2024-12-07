@@ -8,29 +8,29 @@ import IconCodepen from './images/codepen'
 import IconCodewars from './images/codewars'
 
 
-const SocialIconLinks = ({ iconClasses }) => {
+const SocialIconLinks = ({ flexDirection }) => {
 
   return (
-    <>
+    <div className={`flex ${flexDirection} gap-4`}>
       <a href="https://github.com/raazdura" target="_blank" rel="noopener noreferrer">
-        <IconGithub classes={`${iconClasses}`} />
+        <IconGithub  />
       </a>
       <a href="https://www.instagram.com/raaz_dura" target="_blank" rel="noopener noreferrer">
-        <IconLinkedIn classes={`${iconClasses}`}  />
+        <IconLinkedIn   />
       </a>
       {/* <a href="https://twitter.com/cadekynaston" target="_blank" rel="noopener noreferrer">
-        <IconTwitter classes={`${iconClasses}`}  />
+        <IconTwitter   />
       </a> */}
       <a href="https://www.instagram.com/raaz_dura" target="_blank" rel="noopener noreferrer">
-        <IconInstagram classes={`${iconClasses}`}  />
+        <IconInstagram   />
       </a>
       {/* <a href="https://codepen.io/cadekynaston/" target="_blank" rel="noopener noreferrer">
-        <IconCodepen classes={`${iconClasses}`}  />
+        <IconCodepen   />
       </a>
       <a href="https://codewars.com/users/ck1" target="_blank" rel="noopener noreferrer">
-        <IconCodewars classes={`${iconClasses}`}  />
+        <IconCodewars   />
       </a> */}
-    </>
+    </div>
   )
 }
 

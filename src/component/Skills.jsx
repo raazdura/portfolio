@@ -2,7 +2,7 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <div className="dark:bg-dark flex justify-center items-center px-4 lg:px-[100px] gap-4">
+    <div className="dark:bg-dark flex justify-start items-center gap-6">
         {/* <div className="dark:text-white">
             <h1>Skills</h1>
         </div> */}

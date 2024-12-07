@@ -1,6 +1,6 @@
 import React from "react";
 
-const IconInstagram = ({ classes }) => (
+const IconInstagram = () => (
   <svg
     className="dark:fill-white"
     width="25px"

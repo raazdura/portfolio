@@ -1,10 +1,9 @@
 import { useEffect } from "react";
 import Navigation from './component/Navigation'
-import Header from "./component/header";
+import Header from "./component/Header";
 import Footer from "./component/footer";
 import SideItemsLeft from "./component/SideItemsLeft";
 import SideItemsRight from "./component/SideItemsRight";
-import Skills from "./component/Skills";
 
 function App() {
 
@@ -32,7 +31,6 @@ function App() {
       <div className={` dark:bg-black h-screen`}>
        <Navigation darkModeHandler={darkModeHandler} />
        <Header />
-       <Skills />
        <SideItemsLeft />
        <SideItemsRight />
        <Footer />
