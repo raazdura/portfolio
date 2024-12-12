@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import Skills from "./Skills";
 import SocialIconLinks from "./socialIconLinks";
+import Zoro from "../assets/images/Zoro.jpg"
 
 const Header = () => {
   const [isMounted, setIsMounted] = useState(false);
@@ -82,7 +83,7 @@ const Header = () => {
               </CSSTransition>
             ))}
         </TransitionGroup>
-        <img src="/images/Zoro.jpg" alt="Zoro's image" className="h-[500px] hidden md:flex" />
+        <img src={Zoro} alt="Zoro's image" className="h-[500px] hidden md:flex" />
       </div>
     </header>
   );

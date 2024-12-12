@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import music from "../assets/music/Masego-QueenTings.mp3";
 
 const MusicPlayer = () => {
   const audioRef = useRef(null);
@@ -51,7 +52,7 @@ const MusicPlayer = () => {
 
       <audio
         ref={audioRef}
-        src="/music/Masego-QueenTings.mp3"
+        src={music}
         onEnded={handleEnded}
         className="hidden"
       />

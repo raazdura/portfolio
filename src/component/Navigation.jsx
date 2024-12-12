@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link, Events } from "react-scroll";
 import MusicPlayer from "./MusicPlayer";
+import music from "../assets/music/Masego-QueenTings.mp3";
+import resume from "../assets/resume/RaazDuraCV.pdf";
 
 
 const Navigation = ({ darkModeHandler }) => {
@@ -136,7 +138,7 @@ const Navigation = ({ darkModeHandler }) => {
             {/* Resume*/}
             <a
               className="bg-white rounded-lg px-2 py-1 font-medium text-black"
-              href="./resume/RaazDuraCV.pdf"
+              href={resume}
               download="RaazDuraCV.pdf"
               target="_blank"
               rel="noopener noreferrer"
