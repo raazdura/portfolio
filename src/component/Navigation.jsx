@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link, Events } from "react-scroll";
 import MusicPlayer from "./MusicPlayer";
-import music from "../assets/music/Masego-QueenTings.mp3";
 import resume from "../assets/resume/RaazDuraCV.pdf";
 
 
